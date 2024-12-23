@@ -9,6 +9,6 @@ namespace DataModels.Models
 {
     public class User:IdentityUser
     {
-        public string Address { get; set; }
+        public string? Address { get; set; }
     }
 }

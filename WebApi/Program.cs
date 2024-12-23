@@ -23,6 +23,7 @@ namespace WebAPIDotNet
             builder.Services.AddControllers().ConfigureApiBehaviorOptions(
                 options =>
                     options.SuppressModelStateInvalidFilter = true);
+
             builder.Services.AddDbContext<MyContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("def"));
@@ -167,7 +168,7 @@ namespace WebAPIDotNet
 
         static async Task SeedRoles(RoleManager<IdentityRole> roleManager)
         {
-            var roles = new[] { "Admin", "Employee", "User" ,"Supplier"};
+            var roles = new[] { "Admin", "Employee", "User", "Supplier" };
 
             foreach (var role in roles)
             {
@@ -183,7 +184,7 @@ namespace WebAPIDotNet
                new User
                {
                    Id = Guid.NewGuid().ToString(),
-                  
+
                    Email = "ahm75295@gmail.com",
                    PasswordHash = "Ahmed123!@#",
                    UserName = "Ahmedelshiekh45",
