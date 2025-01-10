@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace DataModels.Models;
 
-public partial class Stock : BaseClass
+public  class Stock : BaseClass
 {
 
 

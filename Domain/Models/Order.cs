@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace DataModels.Models;
 
-public partial class Order : BaseClass
+public  class Order : BaseClass
 {
 
 
